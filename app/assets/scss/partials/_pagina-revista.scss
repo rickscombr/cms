@@ -1,0 +1,107 @@
+.pagina-revista{
+	.wrap-btn{
+		margin-bottom: 10px;
+	}
+
+	.footer-component,
+	.legal-text{
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
+
+	.wrap-pagina-revista{
+	    width: 100%;
+	    /*max-width: 850px;*/
+	    margin: 0 auto;
+
+	}
+
+	.separador{
+		padding: 40px 4%;
+	}
+
+	.col-image{
+		display: table-cell;
+		width: 360px;
+		vertical-align: top;		
+
+		img{
+			width: 100%;
+		}
+
+	}
+
+	.title-revista{
+		margin: 0 0 18px 0;
+		font-weight: bold;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+	}
+
+	.col-desc{
+	    display: table-cell;
+	    padding: 0 3.5%;
+	    vertical-align: top;
+
+		p{
+			font-size: 1.2rem;
+			line-height: 1.2;
+		}
+		
+		&.no-image-big{
+			width: 890px;
+		}	
+
+		&.no-image-small{
+			width: 665px; 
+		}
+		
+	}
+	
+	.col-image-big{
+		display: table-cell;
+		width: 460px;
+		vertical-align: middle;
+		text-align: right;
+
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.pagina-revista {
+		.col-image {
+		    width: 40%;
+		    max-width: 360px
+		}
+	}
+}
+
+@media screen and (max-width:760px) {
+    .pagina-revista{
+    	.pagina-revista-wrap{
+    		display: inline-block; 	
+    		margin: 0;
+    		padding: 0 15px;		
+    	}
+
+    	.col-desc,
+    	.col-image-big,
+    	.col-image{
+    		display: block;
+    		width: 100%;
+    		text-align: center;
+    	}
+
+    	.col-image{
+    		margin: 0 auto 30px;
+    	}
+
+    	.col-desc{
+    		text-align: left;
+    	}
+
+    }
+}

@@ -1,0 +1,217 @@
+@import 'variables';
+
+.porteira {
+	.container{
+		padding-bottom: 30px;
+	}
+
+	.target-list{
+		position: relative;
+
+		.ui-menu {
+			&.ui-widget-content {
+				width: 300px;
+				padding: 0;
+				background-color: #fff;
+				z-index: 9999;
+				position: absolute;
+
+				.item-lista{
+					padding: 8px 5%;
+					cursor: pointer;
+					border-bottom: 1px solid #f1f1f1;
+
+					&:hover {
+						background-color: #ccc;
+					}
+
+					&:last-child{
+						border: 0 none;
+					}
+
+					.ui-menu-item-wrapper{
+						color: #666
+					}
+				}
+			}
+		}
+
+		.forms{
+			fieldset {
+				display: block;	
+				border: 0 none;
+				margin: 30px 0 0 0;
+				padding-bottom: 30px;
+				padding: 30px 0;
+			}
+
+			.label{
+				display: block;
+				font-size: 30px;
+				font-weight: bold;
+				color:$color5;
+				margin-bottom: 30px;
+			}
+
+			.inputAutocomplete{
+				border: 1px solid #eaeaea;
+				width: 100%;
+				padding: 14px 4%;
+			}
+
+			.btn{		
+				width: 100%;
+				margin-bottom: 10px;
+				border-radius: 30px;
+				&:hover{
+					opacity: 0.7;
+				}
+			}
+		}
+
+		.visually-hidden {
+			display: none;
+		}
+	}
+
+	.ui-menu {
+		max-width: 600px;
+		
+		&.ui-widget-content {
+			width: 300px;
+			padding: 0;
+			background-color: #fff;
+			z-index: 9999;
+			position: absolute;
+
+			.item-lista{
+				padding: 8px 5%;
+				cursor: pointer;
+				border-bottom: 1px solid #f1f1f1;
+
+				&:hover {
+					background-color: #ccc;
+				}
+
+				&:last-child{
+					border: 0 none;
+				}
+
+				.ui-menu-item-wrapper{
+					color: #666
+				}
+
+				strong{
+					color: #000;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.modal{
+	&.modal-porteira{
+		display: table;
+		height: 100%;
+		min-height: 100%;
+		width: 100%;
+		background-color: $color1;
+		background-size: cover;		
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: fixed;
+		z-index: 999999999999;
+
+		.bg-prehome{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.modal-content{
+			background-color: transparent;
+		}
+
+		.modal-dialog{
+			display: table-cell;			
+			vertical-align: middle;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+
+		.top-prehome{
+			position: absolute;
+			top: 30px;
+			width: 100%;
+			margin: 0 auto;
+			left: 30px;
+
+			img{ 
+				display: inline-block;
+			}
+
+			h2{
+				display: inline-block;
+				font-weight: bold;
+				color: $color3;
+				vertical-align: middle;
+				margin: 0 0 0 15px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 801px) {
+	.porteira {
+		.target-list{
+			float: right;
+			width: 300px;
+			margin-right: 8%;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	.modal{
+		&.modal-porteira{		
+
+			.top-prehome{	    		
+				left: 15px;
+				top: 15px;
+			} 		
+		}
+	}
+	
+	.porteira{
+		display: inline-block;
+		width: 100%;
+		padding-top: 75px;
+
+		.target-list{
+			.forms{        
+				margin: 0; 
+
+				.label{
+					font-size: 25px; 
+
+				}
+
+				fieldset{
+					display: inline-block;
+					padding: 10px 0;
+					width: 100%;
+					margin: 0;
+				}
+				.inputAutocomplete {
+					padding: 9px 4%;
+				}
+			}
+		}		
+	}
+
+}

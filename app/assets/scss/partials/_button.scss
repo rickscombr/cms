@@ -1,0 +1,50 @@
+@import 'variables';
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    @include transition-duration();
+}
+
+.botao{
+    &.Amarelo{
+        background-color: $colorButton1;
+        color: $color0;
+
+        &:hover{
+            background-color: $colorButton2;
+            color: $color0;
+        }
+    }
+    &.Azul{
+        background-color: $colorButton3;
+        color: $color1;
+
+        &:hover{
+            background-color: $colorButton4;
+            color: $color1;
+        }
+    }
+    &.Link{
+        background-color: transparent;
+        color: $colorButton5;
+        text-decoration: underline;
+        padding: 0 !important;
+
+        &:hover{
+            color: $colorButton5;
+        }
+    }
+}

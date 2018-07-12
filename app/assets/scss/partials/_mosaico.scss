@@ -1,0 +1,147 @@
+@import './variables';
+
+.mosaico{
+	float: left;
+	width: 100%;
+	margin-bottom: -20px;
+	.box-img{
+		position: relative;
+		padding-bottom: 75.31%;
+		img {
+			height: 100%;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-webkit-user-select: none;
+			user-select: none;
+			width: auto;
+			position: absolute;
+			width: 100%;
+		}
+
+	}
+
+	.mosaico-item{
+		background-color: #FFF;
+		position: relative;
+		.mosaico-conteudo{
+			display: inline-block;
+			width: 100%;
+			padding: 8%;
+			height: 250px;
+		}
+		
+		.title{
+			font-weight: bold;
+			font-size: 22px;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		&.vertical{
+			margin-left:0;
+
+			.wrap-btn{
+				a{
+					display: inline-block;
+				}
+			}
+		}
+
+		.wrap-btn{
+			position: absolute;
+			bottom: 10px;
+			.g-main-button{
+				display: block;
+			}
+		}
+		.title{
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.box-img{
+			padding-bottom: 86.4%;
+		}
+		.image-wrapper{
+			width: 100%;
+		}
+		&.horizontal{
+			overflow: hidden;		
+	
+		}
+
+
+
+	}
+}
+
+
+@media (min-width: 1024px){
+	.mosaico {
+
+		.mosaico-item {
+			display: inline-block;
+			width:49%;
+			max-width: 555px;
+			margin: 0 0  15px 15px;
+			vertical-align: top;
+			position: relative;
+			float: left;
+			.image-wrapper{
+				width: 50%;
+				float: left;
+			}
+			&.vertical{
+				.mosaico-conteudo{
+					width: 100%;
+					height: 144px
+				}
+			}
+			&.horizontal{
+
+				.wrap-btn{
+					width: 45%;
+				}
+				.mosaico-conteudo{
+					height: 128px
+
+				}
+			}
+			.mosaico-conteudo{
+				padding: 3%;
+			}
+			.mosaico-conteudo,
+			.mosaico-imagem{
+				width: 50%;
+				vertical-align: top;
+			}
+			.box-img{
+				position: relative;
+				padding-bottom: 75.31%;
+				&.-tall-img{
+					padding-bottom:150.9025%;
+				}
+				&.-small-img{
+					padding-bottom:55.7666%;
+				}
+			}
+			
+		}
+	}
+}
+
+
+
+
+@media (min-width: 1200px){
+	.mosaico{
+		.mosaico-item{
+			&.vertical{
+				.mosaico-conteudo{
+					height: 171px;
+				}
+			}
+		}
+	}
+}

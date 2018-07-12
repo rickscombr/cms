@@ -1,0 +1,16 @@
+.item-imagem-link,
+.wrap-imagem-link,
+.imagem-link{
+    display: inline-block;
+    width:100%;
+
+    img{
+        width: 100%;
+    }   
+
+    a{
+        display: inline-block;
+        width: 100%;
+    }
+
+}

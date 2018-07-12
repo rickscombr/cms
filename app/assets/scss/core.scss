@@ -1,0 +1,65 @@
+/* BOOTSTRAP */
+@import 'partials/bootstrap';
+
+
+/* CHAMADAS GERAIS */
+@import 'partials/variables';
+@import 'common/header';
+@import 'common/header-desktop';
+@import 'common/header-mobile';
+@import 'common/footer';
+@import 'common/fonts';
+
+
+/* INICIO DAS CHAMADAS DAS PAGINAS */
+@import 'partials/home';
+
+
+/* COMPONENTES */
+@import 'partials/modal';
+@import 'partials/mosaico';
+@import 'partials/abas';
+@import 'partials/accordion';
+@import 'partials/button';
+@import 'partials/video';
+@import 'partials/zigzag';
+@import 'partials/tutorial';
+@import 'partials/chamada-destaque-horizontal';
+@import 'partials/subdestaque';
+@import 'partials/exclusividade-net';
+@import 'partials/banner-carrossel';
+@import 'partials/text-component';
+@import 'partials/carrossel-video';
+@import 'partials/carrossel-padrao';
+@import 'partials/porteira';
+@import 'partials/destaque-assinante';
+@import 'partials/noticia';
+@import 'partials/eventos';
+@import 'partials/imprensa';
+@import 'partials/roaming-busca-paises';
+@import 'partials/servicos-inteligentes';
+@import 'partials/pagina-roaming';
+@import 'partials/pagina-revista';
+@import 'partials/destaque-de-canais';
+@import 'partials/ppv';
+@import 'partials/banner-capas';
+@import 'partials/destaque-ofertas-mes';
+@import 'partials/imagem-link';
+@import 'partials/carrossel-titulo';
+@import 'partials/carrossel-padrao';
+@import 'partials/grade-de-produtos';
+@import 'partials/carrossel-preview';
+@import 'partials/ja-sabe-o-que-quer';
+@import 'partials/erro';
+@import 'partials/grade-programacao';
+@import 'partials/grade-detalhes';
+@import 'partials/galeria-mosaico';
+@import 'partials/banner-vitrine';
+@import 'partials/porteira-adultos';
+@import 'partials/parallax';
+@import 'partials/abas-verticais';
+
+
+/* TEMA */
+@import 'partials/theme';
+@import 'partials/geral';

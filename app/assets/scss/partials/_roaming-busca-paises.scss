@@ -1,0 +1,88 @@
+.form-roaming-paises{
+	.target-list{
+	    display: table;
+	    height: 100%;
+	    width: 100%;
+	    position: relative;
+        margin-top: 15px;
+	}
+
+	.title-roaming{
+		display: block;
+		font-size: 30px;
+		color:$color5;
+	}
+
+	.autocomplete-geral{
+	    height: auto;
+	    display: flex;
+
+		fieldset {
+		    display: inline-block;
+		    vertical-align: bottom;
+		    border: 0 none;
+		    margin: 0;
+		    padding: 0;
+		    width: 40%;
+
+		    .legend{
+		    	display: none;
+		    }
+		}
+
+		.inputAutocomplete{
+			border: 1px solid #eaeaea;
+			width: 100%;
+			padding: 14px 4%;
+		}
+
+		.btn{		
+			border-radius: 0px 4px 4px 0px;
+		    padding: 13px 8px;
+		    vertical-align: bottom;
+		    display: inline-block;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		}
+	}
+
+	.ui-menu {
+		max-width: 600px;
+		&.ui-widget-content {
+			width: 300px;
+			padding: 0;
+			background-color: #fff;
+			z-index: 9999;
+			position: absolute;
+
+			.item-lista{
+				padding: 8px 5%;
+				cursor: pointer;
+				border-bottom: 1px solid #f1f1f1;
+
+				&:hover {
+					background-color: #ccc;
+				}
+
+				&:last-child{
+					border: 0 none;
+				}
+
+				.ui-menu-item-wrapper{
+					color: #666
+				}
+
+				strong{
+					color: #000;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.msg-erro{
+		display: none;
+		color: $color5;
+		margin-top: 10px;
+	}
+}

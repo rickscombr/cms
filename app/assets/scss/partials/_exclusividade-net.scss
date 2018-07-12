@@ -1,0 +1,143 @@
+.exclusividade-net {
+    text-align: left;
+    width: 100%;
+    float: left;
+    width: 100%;
+    .legal-text {
+        margin-top: 15px;
+    }
+    &-container{
+        margin-bottom: -30px;
+        float: left;
+        width: 100%;
+    }
+}
+
+.exclusividade-net_titulo {
+    font-size: 26px;
+    margin: 35px 0 25px;
+}
+
+
+.exclusividade-net_item {
+    background-color: $color6;
+    height: 226px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    color: $color6;
+
+    i {
+        margin-top: 4px;
+    }
+
+    .img-responsive{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+.exclusividade-net_item:nth-of-type(1) {
+    i {
+        &:before {            
+            position: relative;
+            left: -1px; 
+        }
+    }
+}
+
+
+.exclusividade-net_texto {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 2px;
+    padding: 0;
+}
+
+.exclusividade-net_item:hover .exclusividade-net_overlay {
+    top: 0;
+}
+
+.exclusividade-net_overlay {
+    background-color: $color1;
+    min-height: 226px;
+    margin: 0;
+    display: inline-block;
+    padding: 30px 60px 25px 20px; 
+    color: #003769;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: 0.2s;
+}
+
+
+.exclusividade-net_titulo-overlay {
+    font-size: 22px;
+    text-align: left;
+    margin: 0;
+    line-height: 28px;
+
+    &:nth-of-type(2) {
+        margin-bottom: 9px;
+    }
+}
+.exclusividade-net_texto-overlay {
+    font-size: 16px;
+    text-align: left;
+}
+.exclusividade-net{
+    
+    .g-main-button {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+@media (max-width:1024px) {
+    .exclusividade-net_overlay {
+        top: 0;
+    }
+}
+@media (max-width:1200px) {
+    .exclusividade-net_overlay {
+        padding: 30px 20px 25px;
+    }
+}
+@media (max-width:990px) {
+    .exclusividade-net-container {
+        text-align: center;
+    }
+
+    .exclusividade-net_titulo {
+        text-align: left;
+    }
+
+    .exclusividade-net_overlay {
+        padding: 30px 60px 25px 20px;
+    }
+}
+
+@media (max-width:315px) {
+    .exclusividade-net_item {
+        width: 100%;
+    }
+
+    .exclusividade-net_overlay {
+        padding: 30px 20px 25px;
+    }
+}

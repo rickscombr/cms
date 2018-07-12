@@ -1,0 +1,114 @@
+.banner-capas { 
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;  
+
+    .owl-item{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .banner-capas-i {
+        position: relative; 
+        display: inline-block;
+        width: 100%;       
+    }
+
+    .banner-capas-center{
+        position: absolute;
+        top: 0;            
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 100%;
+        height: 100%; 
+        z-index: 3;
+
+        .container{
+             display: flex;
+             flex-direction: row; 
+             flex-wrap: wrap;    
+             flex-flow: row wrap;
+             min-height: 100%;
+             height: 100%;
+        }           
+
+        .row{               
+            display: flex;
+            width:  100%;  
+            align-items: center;
+            justify-content: flex-start;
+        } 
+    }
+
+    .banner-capas-img{
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;      
+        text-align: center;      
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .banner-capas-conteudo{
+        display: flex;
+        flex-direction: column;          
+        width: 100%;
+        max-width: 310px;
+        z-index: 999; 
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px 0;
+
+        .banner-capas-logo{
+            display: inline-block;
+            width: 100%;
+
+            img{
+                max-width: 100%;
+            }
+        }   
+        .wrap-btn,
+        .banner-capas-texto,
+        .banner-capas-titulo{
+            padding: 0 10px;
+        }   
+
+        .wrap-btn{
+            margin-top: 30px;
+        }
+
+        .banner-capas-titulo{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+        }  
+        .banner-capas-texto{
+            flex: 1 0 auto;
+        }        
+
+    }
+
+}    
+
+@media only screen and (max-width: 700px) {
+    .banner-capas {   
+        overflow: visible;   
+          
+        .banner-capas-center{
+            min-height: auto;
+            height: auto;
+
+            .row{    
+                justify-content: center; 
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }        
+    }
+}
+

@@ -1,0 +1,110 @@
+.faq{
+	display: inline-block;
+	width: 100%;
+    margin-top: 2%;
+
+	.panel-group{
+		margin-top: 2%;
+
+		.panel{
+			&.esconde-temp {
+				display: none;
+			}
+			.panel-title{
+				display: inline-block;
+    			width: 96%;
+			}
+			.panel-heading{
+				border-radius: 0px;
+				background-color: $color5;
+				color: $color1;
+				font-size: 1.000em;
+				position: relative;
+
+				.img-chevron{
+					position: absolute;
+				    left: 0;
+				    top: 0;
+				    width: 100%;
+				    height: 100%;
+				    display: flex;
+				    align-items: center;
+
+
+				    img{
+						position: absolute;
+    					right: 13px;
+    					flex: 1;
+					}
+
+	    			.down{
+    					display: none;
+    				}
+    				.up{
+    					display: flex;
+    				}
+
+
+	    			&.collapsed {
+	    				.down{
+	    					display: block;
+	    				}
+	    				.up{
+	    					display: none;
+	    				}
+	    			}
+				}
+
+				.img-chevron-down::after{
+					background-image: url("../images/icon/chevron-up.png");
+					position:absolute;
+				}
+
+			}
+		}
+	}
+}
+
+.portabilidade {
+	.faq{
+		.panel-group{
+			.panel{
+				&.esconde-temp {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.sim-21 {
+	.faq{
+		.panel-group{
+			.panel{
+				&.esconde-temp {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.mundo-21 {
+	.faq{
+		.panel-group{
+			.panel{
+				&.esconde-temp {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+    .faq{
+    	.main-title{
+    		margin: 15px 0;
+    	}
+    }
+}

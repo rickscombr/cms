@@ -1,0 +1,173 @@
+.banner-carousel {
+    .owl-carousel {
+        .item {
+            .caption {
+                text-decoration: none;
+                border: 0 none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+	.banner-carousel {
+		.owl-carousel {
+			.owl-dots {
+				text-align: left;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.banner-carousel {
+		.container {
+			padding: 0;
+		}
+
+		.owl-carousel {
+			.owl-dots {
+				text-align: center;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 300px) {
+    .banner-carousel {
+        .owl-carousel {
+            overflow: hidden;
+            .item {
+                 /* /.caption */
+            } /* /.item */
+            .owl-dots {
+                margin-top: -30px;
+                padding-bottom: 10px;
+                width: 100%;
+                position: relative;
+                .owl-dot {
+                    background: $color1;
+                    border: 2px solid $color6;
+                    text-indent: -999999px;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    margin: 0 15px;
+                    @include transition-duration;
+                    img {
+                        display: none;
+                    }
+                    &.active {
+                        background: $color6;
+                        border-color: $color1;
+                    }
+                } /* /.owl-dot */
+            } /* /.owl-dots */
+        } /* /.owl-carousel */
+    } /* /.banner-carousel */
+} /* @media 320px */
+@media only screen and (min-width: 480px) {
+    .banner-carousel {
+        .owl-carousel {
+            .item {
+                .caption {
+                	padding: 3%;
+                    .title {
+                        font-size: 18px;
+                    }
+                    .description {
+                        font-size: 18px;
+                        display: block;
+                    }
+                    .fake-button {
+                        margin-bottom: 15px;
+                    }
+                } /* /.caption */
+            } /* /.item */
+        } /* /.owl-carousel */
+    } /* /.banner-carousel */
+} /* @media 480px */
+@media only screen and (min-width: 640px) {
+    .banner-carousel {
+        .owl-carousel {
+            .item {
+                .caption {
+                	padding: 3%;
+                    .title {
+                        font-size: 34px;
+                    }
+                    .cool-text small {
+                        display: block;
+                    }
+                } /* /.caption */
+            } /* /.item */
+        } /* /.owl-carousel */
+    } /* /.banner-carousel */
+} /* @media 640px */
+@media only screen and (min-width: 768px) {
+    .banner-carousel {
+        .owl-carousel {
+            .item {
+                .caption {
+                	padding: 3%;
+                    .fake-button {
+                        height: 50px;
+                        line-height: 50px;
+                        margin-bottom: 30px;
+                        font-size: 16px;
+                    }
+                } /* /.caption */
+            } /* /.item */
+        } /* /.owl-carousel */
+    } /* /.banner-carousel */
+} /* @media 768px */
+@media only screen and (min-width: 1170px) {
+    .banner-carousel {
+        .owl-carousel {
+            .owl-dots {
+                position: absolute;
+                bottom: 0;
+                padding: 0 15px;
+                z-index: 1;
+                margin: 0 auto;
+                .owl-dot {
+                    padding: 16px 10px;
+                    color: $color1;
+                    border: 0 none;
+                    border-radius: 0;
+                    border-top: 1px solid $color1;
+                    position: relative;
+                    height: auto;
+                    width: 174px;
+                    background: transparent;
+                    text-indent: inherit;
+                    img {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: -100px;
+                        z-index: -1;
+                        border-top: 0 solid $color10;
+                        @include transition-duration;
+                    }
+                    &.active {
+                        background: transparent;
+                        border-top-width: 2px;
+                        font-weight: bold;
+                    }
+                    &:hover {
+                        background: rgba($color0, 0.5);
+                        border-color: transparent;
+                        img {
+                            bottom: -16px;
+                            border-top-width: 2px;
+                        }
+                    }
+                } /* /.owl-dot */
+            } /* /.owl-dots */
+        } /* /.owl-carousel */
+    } /* /.banner-carousel */
+} /* @media 1170px */

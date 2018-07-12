@@ -1,0 +1,191 @@
+@import 'variables';
+.carrosselPreview {
+    .row{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .owl-carousel {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+
+      /*  > a {
+            display: none;
+
+            &:first-child {
+                display: inline-block;
+            }
+        }*/
+
+        &.owl-loading {
+            width: auto;
+        }
+
+        &.owl-loaded {
+            width: auto;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                border: 0 none;
+                /*display: inline-block;*/
+                float: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                .item {
+                    max-width: none;
+
+                    img {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .item {
+        max-width: none;
+        position: relative;
+        .conteudo{
+            width: 40%;
+            position: absolute;
+            z-index: 1;
+            /*background-color: red;*/
+            top: 30%;
+            color: #FFF;
+            text-align: left;
+            left: 8%;
+            h2{
+                font-size: 58px;
+                margin-bottom: 4%;
+            }
+            div{
+                font-size: 25px;
+                font-family: FuturaBT;
+            }
+        }
+        picture, video{
+            position: relative;
+            z-index: 0;
+        }
+    }
+
+    .dots-custom {
+        position: absolute;
+        bottom: 0;
+        padding: 0 15px;
+        z-index: 1;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+
+        .owl-dot {
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+[data-componente="carrosselPreview"]{
+    &.disable{
+        .owl-carousel{
+            display: block;
+
+            .item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1170px) {
+    .carrosselPreview {
+        .dots-custom {
+            display: flex;
+            .owl-dot {
+                padding: 16px 10px;
+                color: #ffffff;
+                border: 0 none;
+                border-radius: 0;
+                border-top: 1px solid #ffffff;
+                position: relative;
+                background: transparent;
+                text-indent: inherit;
+                display: inline-block;
+                margin: 0 15px;
+                width: calc(100%/4);
+                transition: background .7s;
+
+                img {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -100px;
+                    z-index: -1;
+                    border-top: 0 solid $color6;
+                    
+                    @include transition-duration;
+                }
+
+                &.active {
+                    background: transparent;
+                    border-top-width: 3px;
+                    font-weight: bold;
+                    padding-top: 14px;
+
+                    &:hover {
+                        border-top-width: 3px;
+                    }
+                }
+
+                &:hover {
+                    background: rgba($color0, 0.5);
+                    border-color: transparent;
+                    border-top-width: 1px;
+                    font-weight: bold;
+
+                    img {
+                        bottom: -16px;
+                        border-top-width: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1169px) {
+    .carrosselPreview {
+        .dots-custom {
+            padding: 17px 1%;
+
+            .owl-dot{
+                background: $color1;
+                border: 2px solid $color1;
+                text-indent: -999999px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin: 0 1%;
+                transition-duration: .7s;
+
+                &.active{
+                    background: $color5;
+                    border: 2px solid $color1;
+                }
+
+                .img-responsive{
+                    display: none;
+                }
+            }
+        }
+    }   
+}

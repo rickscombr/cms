@@ -1,0 +1,90 @@
+@import './variables';
+.text-component{
+
+	.text-component-container{
+		@include clearfix;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		overflow: hidden;
+
+		.titulo-pagina{
+			&.title{
+				color: #028CFF;
+				font-family: 'SourceSansPro';
+				font-size: 45px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				margin-bottom: 40px;
+			}
+			.texto1{
+				color: #333c40;
+				font-family: 'SourceSansPro';
+				font-size: 32px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				margin-bottom: 40px;
+			}
+			.texto2{
+				color: #333c40;
+				font-family: 'SourceSansPro';
+				font-size: 15px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.33;
+				letter-spacing: normal;
+				margin-bottom: 40px;
+			}
+		}
+	}
+	.title{
+		font-family: SourceSansPro;
+		font-size: 28px;
+		font-weight: 600;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #456ca4;
+		margin: 10px 0 25px;
+	}
+
+	.content {
+		font-family: SourceSansPro;
+		font-size: 15px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		text-align: left;
+		color: #333c40;
+		
+		.col-md-6,
+		.col-sm-12 { 
+			padding: 10px 15px; 
+		}
+		
+	}
+
+	.banner-imagem {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	}
+}

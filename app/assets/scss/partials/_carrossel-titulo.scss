@@ -1,0 +1,164 @@
+@import 'variables';
+
+.carrosselTitulo {
+    .row{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .owl-carousel {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+        overflow: hidden;
+
+        &.owl-loading {
+	        width: auto;
+	    }
+
+	    &.owl-loaded {
+	        width: auto;
+	        text-align: center;
+
+	        a {
+				text-decoration: none;
+				border: 0 none;
+				/*display: inline-block;*/
+				float: none;
+
+	            &:hover {
+	                text-decoration: none;
+	            }
+
+	            .item {
+	                img {
+	                    display: inline-block;
+	                }
+	            }
+	        }
+	    }
+
+        > a {
+            display: none;
+
+            &:first-child {
+                display: inline-block;
+            }
+        }
+
+        .item {
+            max-width: none;
+        }
+    }
+
+	.container-dots {	
+		position: absolute;
+	    width: 100%;
+	    bottom: 0;
+	    left: 0;
+	    background: rgba(0, 0, 0, 0.7);
+	    z-index: 1;
+
+		.wrapper-dots{
+			max-width: 1140px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.owl-dots{
+			width: 50%;
+			display: inline-block;
+		}
+
+		.bullets{
+			width: 49%;
+			display: inline-block;
+			box-sizing: border-box;
+			text-align: right;
+			vertical-align: super;
+		    line-height: 1;
+		    padding: 26px 0;
+
+			.number{
+			    text-indent: -9000px;
+			    width: 20px;
+			    height: 20px;
+			    padding: 0;
+			    border-radius: 50%;
+			    background: #fff;
+			    margin: 0 5px;
+			    display: inline-block;
+			    cursor: pointer;
+			    position: relative;
+			    overflow: hidden;
+			    text-align: left;
+			    box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
+
+			    &.active{
+			    	background: $color5;
+                    border: 2px solid $color1;
+			    }
+			}
+		}
+
+		.owl-dot{
+			display: none;
+		    background: 0 0;
+		    width: 100%;
+		    padding: 15px 0 12px 15px;
+		    text-align: left;
+	    
+	    	&.active{
+		    	display: block;
+		    }
+
+		    .texto-sub{
+		    	color: $color1;
+		    	font-family: Montserrat,sans-serif;
+			    font-weight: 700;
+			    font-size: 14px;
+			    color: #fff;
+			    line-height: 1;
+			    margin: 0 auto;
+
+
+			    .texto-destaque{
+					font-weight: 700;
+					font-size: 24px;
+					display: block;
+			    }
+		    }
+		}
+	}
+}
+
+[data-componente="carrosselTitulo"]{
+	&.disable{
+		.owl-carousel{
+			display: block;
+
+			.item{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.carrosselTitulo {
+		.container-dots {
+			background-color: transparent;
+			
+			.owl-dots{
+				display: none;
+			}
+
+			.bullets{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}

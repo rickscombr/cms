@@ -1,0 +1,360 @@
+footer{
+	background-color: $color5;
+	color: $color1;
+	padding-top: 30px;
+	position: relative;
+	margin-top: 2%;
+	overflow: hidden;
+
+	.col-map{
+		float: left;
+		padding: 0 15px;
+	}
+
+
+	.atendimento-claro{
+		ul{
+			li{
+				padding: 5px 0;
+				display: inline-block;
+				width: 49%;
+			}
+		}
+	}
+
+
+	.extra-content{
+		padding-bottom: 2%;
+	}
+	.midias{
+		text-align: center;
+		float: none;
+	}
+	.extra-links{
+		text-align: right;
+
+		span:last-child{
+			display: none;
+		}
+	}
+	.copyright{
+		text-align: left;
+	}
+	.container:first-child{
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
+
+	.icon{
+		width: 32px;
+		float: left;
+	}
+	.icon-user{
+		margin-top: -6px;
+	}
+	a{
+		color: $color1;
+
+		&:hover{
+			color: $color1;
+			text-decoration: underline;
+		}
+	}
+
+	.hr{
+		border-bottom: 1px solid $color22;
+	}
+
+
+	.mapa-do-site{
+		height: 50px;
+		margin-top: 40px;
+		background-color: $color6;
+		cursor: pointer;
+
+		display: -ms-flex;
+		display: -webkit-flex;
+		display: flex;
+
+		-ms-align-items: center;
+		-webkit-align-items: center;
+		align-items: center;
+		
+		-ms-justify-content: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		position: relative;
+
+
+
+		.icon-down{
+			position: relative;
+			margin-left: 33px;
+
+			&:after, &:before {
+				width: 12px;
+				height: 11px;
+				display: block;
+				content: '';
+				top: 0;
+				position: absolute;
+			}
+
+			&:before {
+				right: 10px;
+				border-left: 1px solid;
+				-webkit-transform: rotate(-40deg);
+				-ms-transform: rotate(-40deg);
+				transform: rotate(-40deg);
+			}
+
+			&:after {
+				right: 12px;
+				border-right: 1px solid;
+				-webkit-transform: rotate(40deg);
+				-ms-transform: rotate(40deg);
+				transform: rotate(40deg);
+			}
+		}
+		.up{
+			top: 8px;
+			&:before {
+				border-left: 1px none;
+				border-right: 1px solid;
+				-webkit-transform: rotate(-140deg);
+				-ms-transform: rotate(-140deg);
+				transform: rotate(-140deg);
+			}
+			&:after {
+				border-right: none;
+				border-left: 1px solid;
+				-webkit-transform: rotate(140deg);
+				-ms-transform: rotate(140deg);
+				transform: rotate(140deg);
+			}
+		}
+	}
+
+	li{
+		p:first-child{
+			font-weight: bold;
+		}
+	}
+	.cliente{
+		i{
+			font-size: 40px;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			display: inline-block;
+		}	
+		p{
+			
+			text-transform: uppercase;
+			display: inline-block;
+		}
+	}
+	.btn{
+		border-radius: 0;
+		text-transform: uppercase;
+		background-color: $color11;
+		color: $color0;  
+		font-weight: bold;      
+
+		&:hover {
+			background-color:  $color12;
+			color: $color0;
+			text-decoration: none;
+		}    
+	}
+
+	.border{
+		border: 1px solid $color22;
+		padding:30px!important;
+	}
+	.sub-menu{
+		background-color: $color6;;
+		color: $color1;
+		display: none;
+
+		li:first-child{
+			font-weight: bold;
+			margin:30px 0 10px 0;
+			text-transform: uppercase;
+			padding:0;
+		}
+	}
+	.midias{
+		float: right;
+		padding: 28px 0;
+		li{
+			float: left;
+			overflow: hidden;
+			width:37px;
+			height: 36px;
+			margin-left: 5px;
+			padding: 0;
+			a{
+				display: block;
+				height: 36px;
+				color:#FFF;
+				font-size:30px;
+
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.left{
+		text-align: left;
+	}
+	.right{
+		text-align: right;
+	}
+	.wrap-telesales{
+		* {
+			display: inline-block;
+		}
+
+		.days{		    
+			vertical-align: middle;
+			max-width: 130px;
+			text-align: left;
+			margin-left: 15px;
+		}  
+		.separador{
+			background: $color22;
+			height: 20px;
+			width: 1px;
+			margin: 0 5px;
+			vertical-align: middle;
+		}
+
+		.tel-vendas{
+			text-transform: uppercase;
+
+			i {
+				font-size: 27px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+}
+
+
+@media screen and(min-width: 768px) {
+	footer{
+
+		.extra-content{
+
+		}
+		.extra-links{
+			text-align: right;
+		}
+		.copyright{
+			text-align: left;
+		}
+
+		.col-map {
+			 width: 25%;
+			 
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	footer{
+
+		.col-map {
+			 width: 50%;
+			
+		}
+
+		.midias{
+			li{
+				display: inline-block;
+				float: none;
+			}
+			text-align: center;
+			float: none;
+		}
+		.extra-links{
+			text-align: center;
+		}
+		.copyright{
+			text-align: center;
+			margin:0 0 10px 0
+		}
+
+
+		.border{
+			padding: 24px!important;
+			margin: 20px;
+		}
+		.col-lg-6{
+			.ligue-txt{
+				width: 80%;
+
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 765px) {
+	footer{
+
+		.container{
+			&:first-child{
+				margin-bottom: 0;
+			}
+		}
+
+		.wrap-telesales{
+			&.right{
+				float: left;
+				width:100%;
+				padding: 20px 10px 0 10px;
+				margin-top: 20px;
+				border-top: 1px solid #c12911;
+			}
+
+			.wrap-phones{
+				float: left;
+				max-width: 50%;
+				text-align: left;
+
+				*{
+					width: 100%;
+					padding: 0;
+					margin: 0;
+				}
+				
+				.separador,
+				i {
+					display: none;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width:500px) {
+	footer{
+
+		.col-map {
+			 width: 100%;
+			 float: left;
+		}
+
+		.sub-menu{
+			.col-xs-6.small{
+				width: 100%;
+			}
+		}
+	}
+}

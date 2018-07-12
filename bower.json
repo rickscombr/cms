@@ -1,0 +1,35 @@
+{
+  "name": "boilerplate",
+  "description": "Projeto padrão para o desenvolvimento frontend",
+  "main": "gulpfile.js",
+  "authors": [
+    "Ricardo Marques"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Bootstrap",
+    "Sass",
+    "jQuery",
+    "Gulp",
+    "Bower",
+    "BrowserSync"
+  ],
+  "homepage": "https://github.com/rickscombr/cms.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "bootstrap-sass": "^3.3.7",
+    "owl.carousel": "^2.2.1"
+  },
+  "resolutions": {
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,767 @@
+@import 'variables';
+
+
+
+.container-header, #main-footer{
+	/*display: none;*/
+}
+
+
+
+.grade-programacao{
+	font-family: "SourceSansPro";
+
+	p{
+		margin: 0 0 2px;
+	}
+
+	.row{
+		position: relative;
+		overflow: hidden;
+
+		.sem-resultado{
+			width: 100%;
+			text-align: center;
+			font-size: 18px;
+			display: none;
+		}
+	}
+	.filtro{
+
+		margin: 15px -15px;
+		overflow: inherit;
+		.title{
+			width: 270px;
+			float: left;
+			font-size: 12px;
+			/*padding-top: 10px;*/
+			.main-title{
+				width: 100%;
+				margin: 0;
+				padding: 0 20px;
+			}
+		}
+		.caixa-padrao {
+			padding: 2px 15px 0 0;
+			width: auto;
+			float: left;
+			.item {
+				margin-top: 5px;
+				padding: 8px 0 0 0;
+				white-space: normal;
+				&:first-child {
+					margin-top: 0px;
+					padding-top: 0;
+				}
+			}
+			.title {
+				color: #4a4a4a;
+				margin-bottom: 20px;
+			}
+			strong {
+				color: #000;
+			}
+
+
+			.form-busca {
+				margin: 0 2px;
+				padding: 0.35em 0.625em 0.75em;
+			}
+			fieldset {
+				border: 0 none;
+				position: relative;
+				margin: 0;
+				padding: 0;
+
+				.btn-lupa-grade{
+                      padding: 1px 6px 6px;
+				}
+			}
+			.menu-drop-dow {
+				&:focus {
+					text-decoration: none;
+					color: $color5;
+				}
+			}
+			.actions-form {
+				margin: 8px 0 0 auto;
+				input, select {
+					padding: 6px 5%;
+					display: block;
+					clear: both;
+
+					text-align: left;
+					font-size: 1.4rem;
+					border: 0 none;
+					box-shadow: 0.5px 1px 3px 1px rgba(0, 0, 0, 0.12);
+					border-radius: 4px;
+					font-weight: 300;
+					i {
+						display: block;
+						text-indent: -9000px;
+					}
+				}
+				button {
+					position: absolute;
+					top: 0;
+					right: 0;
+					border: 0 none;
+					background: #fff;
+					height: 100%;
+					margin: 0;
+					padding-left: 0;
+					i {
+						text-indent: -90000px;
+						display: block;
+					}
+					&:before {
+						display: block;
+						border-left: 1px solid #ccc;
+						padding-left: 5px;
+						margin: 8px 0 0 0;
+						width: 30px;
+					}
+				}
+			}
+		}
+		.f_canal{
+			input{
+				width: 202px;
+			}
+		}
+		.f_ordem{
+			select{
+				width: 70px;
+			}
+		}
+		.f_tipo{
+			select{
+				width: 180px;
+			}
+		}
+		.f_busca{
+			background-color: #E4E4E4;
+			z-index: 0;
+			width: 333px;
+			input{
+				width: 100%;
+			}
+			#resulBuscaProg{
+				position: absolute;
+				width: calc(333px - 22px);
+				z-index: 8;
+				top: 94%;
+				background-color: #FFF;
+				margin: 0 11px;
+				overflow-y: scroll;
+				max-height: 400px;
+
+				li{
+					width: 100%;
+					padding: 25px 15px 20px;
+					float: left;
+					border-bottom: 1px solid #F1F1F1;
+					h3{
+						margin: 0 0 10px;
+						font-size: 20px;
+					}
+					a{
+						text-decoration: none;
+					}
+					&:hover{
+						background-color: #12AAED;
+						a{
+							color: #FFF;
+
+						}
+					}
+				}
+				.desc{
+					width: 100;
+					float: left;
+				}
+			}
+		}
+	}
+
+
+
+	.datepicker{
+		display: inline-block;
+		text-transform: uppercase;
+		white-space: nowrap;
+		position: absolute;
+		top: 0;
+		background-color: #0C68F9;
+		color: #fff;
+		height: 40px;
+		width: 146px;	
+		font-size: 12px;
+		padding: 12px;
+		
+		& span:first-child{
+			float:left;
+		}
+		.dia{
+			cursor: pointer;
+			width: calc(100% - 24px);
+			float: left;
+			text-align: center;
+		}
+
+		.calendario{
+			position: absolute;
+			z-index: 8;
+			top: 40px;
+			left: 0;
+			display: none;
+
+
+			:root {
+				--brand-color: #0C68F9;
+			}
+
+			.datepicker-container {
+				background-color: #fff;
+				direction: ltr;
+				font-size: 12px;
+				left: 0;
+				line-height: 30px;
+				position: fixed;
+				top: 0;
+				touch-action: none;
+				user-select: none;
+				width: 273px;
+				z-index: -1;
+				-webkit-tap-highlight-color: transparent;
+				-webkit-touch-callout: none;
+
+				&::before,
+				&::after {
+					border: 5px solid transparent;
+					content: " ";
+					display: block;
+					height: 0;
+					position: absolute;
+					width: 0;
+				}
+			}
+
+			.datepicker-dropdown {
+				border: 1px solid #ccc;
+				box-shadow: 0 3px 6px #ccc;
+				box-sizing: content-box;
+				position: absolute;
+				z-index: 1;
+			}
+
+			.datepicker-inline {
+				position: static;
+			}
+
+
+
+			.datepicker-bottom-left,
+			.datepicker-bottom-right {
+				border-bottom-color: #0C68F9;
+
+				&::before,
+				&::after {
+					border-bottom: 0;
+					bottom: -5px;
+					left: 10px;
+				}
+
+				&::before {
+					border-top-color: #0C68F9;
+				}
+
+				&::after {
+					border-top-color: #fff;
+					bottom: -4px;
+				}
+			}
+
+			.datepicker-top-right,
+			.datepicker-bottom-right {
+				&::before,
+				&::after {
+					left: auto;
+					right: 10px;
+				}
+			}
+
+			.datepicker-panel {
+				& > ul {
+					margin: 0;
+					padding: 0;
+					width: 100%;
+
+					&::before,
+					&::after {
+						content: " ";
+						display: table;
+					}
+
+					&::after {
+						clear: both;
+					}
+
+					& > li {
+						background-color: #fff;
+						cursor: pointer;
+						float: left;
+						height: 32px;
+						list-style: none;
+						margin: 0;
+						padding: 0;
+						text-align: center;
+						width: 39px;
+						color: #000;
+
+
+						&:hover {
+							background-color: #0C68F9;
+							color: #FFF!important;
+						}
+
+						&.muted,
+						&.muted:hover {
+							color: #999;
+						}
+
+						&.highlighted {
+							background-color: #0C68F9;
+							color: #FFF!important;
+
+							&:hover {
+								background-color: #0C68F9;
+							}
+						}
+
+						&.picked,
+						&.picked:hover {
+							color: #0C68F9;
+						}
+
+						&.disabled,
+						&.disabled:hover {
+							background-color: #fff;
+							color: #ccc!important;
+							cursor: default;
+
+							&.highlighted {
+								background-color: #0C68F9;
+								color: #FFF!important;
+							}
+						}
+
+						&[data-view="years prev"],
+						&[data-view="year prev"],
+						&[data-view="month prev"],
+						&[data-view="years next"],
+						&[data-view="year next"],
+						&[data-view="month next"],
+						&[data-view="next"] {
+							font-size: 18px;
+						}
+
+						&[data-view="years current"],
+						&[data-view="year current"],
+						&[data-view="month current"] {
+							width: calc(100% - 78px);
+							background: #0C68F9;
+							color: #FFF;
+						}
+
+
+						&[data-view="month next"].disabled,
+						&[data-view="month next"],
+						&[data-view="month prev"].disabled,
+						&[data-view="month prev"],
+						{
+							background: #0C68F9;
+							color: #FFF;
+						}
+
+						&[data-view="day prev"],
+						&[data-view="day"],
+						&[data-view="day picked"],
+						&[data-view="day next"],
+						&[data-view="day disabled"] {
+							border-left: 1px solid #bcbcbc;
+							border-top: 1px solid #bcbcbc;
+						}
+					}
+
+					&[data-view="years"],
+					&[data-view="months"] {
+						& > li {
+							height: 52.5px;
+							line-height: 52.5px;
+							width: 52.5px;
+						}
+					}
+
+					&[data-view="week"] {
+						& > li,
+						& > li:hover {
+							background-color: #0C68F9;
+							color: #FFF;
+							cursor: default;
+						}
+					}
+				}
+			}
+
+			.datepicker-hide {
+				display: none;
+			}
+
+
+
+		}
+
+	}
+	.canal_lista{
+		background-color: #fff;
+		font-size: 0;
+		padding: 0;
+		//position: absolute;
+		top: 0;
+		width: 148px;
+		float: left;
+		margin-top: 40px;
+
+		.channel-logo{
+			img{				
+				max-width: 110px;
+				max-height: 45px;
+			}
+		}
+		li{
+			height: 131px;			
+			border-bottom: solid 1px #d8d8d8;
+			border-left: solid 1px #d8d8d8;
+			border-right: solid 1px #d8d8d8;
+		}
+		a, .logo{
+			display: block;
+			height: 100%;
+			width: 100%;
+			color: #666;
+
+			&:before{
+				content: "";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+				width: 0;
+			}
+		}
+		span{
+			display: inline-block;
+			font-size: 12px;
+			text-align: center;
+			vertical-align: middle;
+			padding-left: 10px;
+		}
+		div{
+			box-sizing: border-box;
+			display: inline-block;
+			text-align: left;
+			vertical-align: middle;
+		}
+	}
+
+
+	.scroll{
+		width: calc(100% - 148px);
+		overflow-x: hidden;
+		overflow-y: hidden;
+		z-index: 0;
+		position: relative;
+		&::-webkit-scrollbar { 
+			display: none;
+		}
+		.prog{
+			width: 7920px;
+		}
+
+		.now-marker{
+
+			height: 100%;
+			position: absolute;
+			width: 1px;
+			z-index: 3;
+			background-color: #d52b1e;
+		}
+		.hora{
+			float: left;
+			display: inline-block;
+			width: 7920px;
+			text-transform: uppercase;
+			white-space: nowrap;
+			top: 0;
+			position: absolute;
+			z-index: 3;
+
+			li{
+				background-color: #666;
+				color: #fff;
+				box-sizing: border-box;
+				display: inline-block;
+				font-size: 12px;
+				height: 40px;
+
+				padding: 12px;
+				width: 165px;
+				border-right: 1px solid;
+			}
+		}
+
+
+		.prog_lista{
+
+			display: inline-block;
+			width: 7920px;
+			left: 0!important;
+			margin-top: 40px;
+			
+			.prog_canal{
+				width: 100%;
+				float:left;
+				border-bottom: solid 1px #d8d8d8;
+			}
+
+			.prog_programacao{
+
+				width: 165px;
+				height: 130px;
+				border-right: solid 1px #d8d8d8;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				float: left;
+				font-size: 12px;
+				vertical-align: top;
+				
+				& >div{
+					padding: 12px;					
+				}
+
+				strong{
+					font-size: 12px;
+					color: #333;
+					word-wrap: break-word;
+					text-transform: uppercase;
+
+				}
+				span{
+					color: #666;
+					font-size: 12px;
+				}
+				a:hover{
+					color: #666;
+				}
+			}
+			.more-container{
+				float: left;
+				margin-top: 8px;
+				z-index: 1;
+				position: absolute;
+				white-space: nowrap;
+
+				.btn-more{
+					border: 2px solid #0C68F9;
+					color: #0C68F9;
+					padding: 5px;
+					text-transform: uppercase;
+					cursor: pointer;
+					font-size: 10px;
+					display:inline;
+				}
+				.more-list{
+					margin: 0;
+					opacity: 0;
+					padding: 10px;
+					position: absolute;
+					visibility: hidden;
+					width: 160px;
+					z-index: 3;
+					background-color: #0C68F9;
+				}
+				&.active{
+					position: relative;
+					.btn-more{
+
+						background-color: #0C68F9;
+						color: #FFF;
+					}
+					.more-list{
+
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+				.more-item {
+					border-top: 1px solid;
+					margin-top: 10px;
+					padding-top: 10px;
+					color: #fff;
+					strong, span{
+						color: #fff;
+					}
+					&:first-child{
+						border: 0;
+						margin-top: 0;
+					}
+				}
+
+			}
+
+		}
+	}
+	.mais_prog{
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+		.btn{
+			border-radius: 20px;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 18px;
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: 100%;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: center;
+			padding: 10px 30px;
+			border: 0;
+			background: #4cadfe;
+			color: #FFF;
+			&:hover{
+				text-decoration:none;
+				background: #0c68f9;
+
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.grade-programacao{
+		.filtro{
+			.title{
+				width: 100%;
+				padding: 0.35em 0.625em 0.75em
+			}
+			.f_busca{
+				width: calc(425px - 22px);
+				#resulBuscaProg{
+					width: calc(391px - 22px);
+				}
+			}
+		}
+	} 
+}
+
+@media only screen and (max-width: 1023px) {
+	.grade-programacao{
+		.scroll{
+			overflow-x: auto;
+		}
+		.filtro{
+			padding-top: 126px;
+		}
+	} 
+}
+
+
+@media only screen and (max-width: 992px) {	
+	.grade-programacao{
+		.filtro{
+
+			.f_canal{
+				.form-busca{
+					margin-left: 0;
+					padding-left: 0;
+				}
+				input{
+					width: 376px;
+				}
+			}
+			.f_ordem{
+				select{
+					width: 70px;
+				}
+			}
+			.f_tipo{
+				padding-right: 0;
+				.form-busca{
+					margin-right: 0;
+					padding-right: 0;
+				}
+				select{
+					width: 224px;
+				}
+			}
+			.f_busca{
+				width: 100%;
+				float: left;
+				padding-right: 0;
+				.actions-form{
+					input{
+						width: 100%;
+						padding: 6px 2%;
+					}
+				}
+				#resulBuscaProg{
+					top: 98%;
+					width: calc(100% - 22px);
+					margin: 0 11px;
+				}
+			}
+		}
+	}
+} 
+
+@media only screen and (max-width: 766px) {
+	.grade-programacao{
+		.filtro{
+		
+			.caixa-padrao {
+				padding: 2px 0;
+			}
+			.f_canal{
+				width: 100%;
+				padding: 0;
+				.form-busca{
+					margin: 0 2px;
+					padding: 0.35em 0.625em 0.75em;
+				}
+				input{
+					width: 100%;
+				}
+			}
+			.f_ordem{
+				width: 40%;
+				select{
+					width: 100%;
+				}
+			}
+			.f_tipo{
+				width: 58%;
+				margin: 0 2px;
+				.form-busca{
+					margin-right: 0;
+					padding-right: 0;
+				}
+				select{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

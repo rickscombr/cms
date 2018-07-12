@@ -1,0 +1,138 @@
+{
+	codigo: 1,
+	dados:[
+		{
+			cidade: "Almirante Tamandaré",
+			telefone:[
+				{
+				subtitulo: "Televendas",
+				texto: "4004-8844 (custo de ligação local)"
+				},
+				{
+				subtitulo: "Horário de atendimento",
+				texto: "Todos os dias das 8:00 às 22:00"
+				}
+			],
+			outras:[
+				{
+					titulo: "Central de Relacionamento"
+					descricao:[
+						{
+						subtitulo: "Comentários, Sugestões e Reclamações",
+						texto: "106 21 (ligação gratuita)"
+						},
+						{
+						subtitulo: "Atendimento a deficientes auditivos",
+						texto: "0800 721 7707"
+						}
+					]
+				},
+				{
+					titulo: "Ouvidoria"
+					descricao:[
+						{
+						subtitulo: "Telefone",
+						texto: "0800 701 01 80 (ligação gratuita)"
+						},
+						{
+						subtitulo: "Horário de atendimento",
+						texto: "de Segunda a Sábado das 08:00 às 20:00"
+						},
+						{
+						subtitulo: "Observações",
+						texto: "Ao entrar em contato, tenha em mãos o protocolo de atendimento obtido na Central de Relacionamento."
+						}
+					]
+				},
+				{
+					titulo: "Atendimento Técnico, Financeiro e Compra de Serviços"
+					descricao:[
+						{
+						subtitulo: "Telefone",
+						texto: "106 21 (ligação gratuita)"
+						},
+						{
+						subtitulo: "Horário de atendimento",
+						texto: "Atendimento 24 horas"
+						},
+						{
+						subtitulo: "Observações",
+						texto: "Ao entrar em contato, tenha em mãos o protocolo de atendimento obtido na Central de Relacionamento."
+						}
+					]
+				}
+			],
+			rodape: ""
+			razao: "Claro S/A"
+			cnpj: "40.432.544/0224-69"
+		},
+	],
+	codigo: 2,
+	dados:[
+		{
+			cidade: "Alvorada",
+			telefone:[
+				{
+				subtitulo: "Televendas",
+				texto: "4004-8844 (custo de ligação local)"
+				},
+				{
+				subtitulo: "Horário de atendimento",
+				texto: "Todos os dias das 8:00 às 22:00"
+				}
+			],
+			outras:[
+				{
+					titulo: "Central de Relacionamento"
+					descricao:[
+						{
+						subtitulo: "Comentários, Sugestões e Reclamações",
+						texto: "106 21 (ligação gratuita)"
+						},
+						{
+						subtitulo: "Atendimento a deficientes auditivos",
+						texto: "0800 721 7707"
+						}
+					]
+				},
+				{
+					titulo: "Ouvidoria"
+					descricao:[
+						{
+						subtitulo: "Telefone",
+						texto: "0800 701 01 80 (ligação gratuita)"
+						},
+						{
+						subtitulo: "Horário de atendimento",
+						texto: "de Segunda a Sábado das 08:00 às 20:00"
+						},
+						{
+						subtitulo: "Observações",
+						texto: "Ao entrar em contato, tenha em mãos o protocolo de atendimento obtido na Central de Relacionamento."
+						}
+					]
+				},
+				{
+					titulo: "Atendimento Técnico, Financeiro e Compra de Serviços"
+					descricao:[
+						{
+						subtitulo: "Telefone",
+						texto: "106 21 (ligação gratuita)"
+						},
+						{
+						subtitulo: "Horário de atendimento",
+						texto: "Atendimento 24 horas"
+						},
+						{
+						subtitulo: "Observações",
+						texto: "Ao entrar em contato, tenha em mãos o protocolo de atendimento obtido na Central de Relacionamento."
+						}
+					]
+				}
+			],
+			rodape: ""
+			razao: "Claro S/A"
+			cnpj: "40.432.544/0224-69"
+		},
+	]
+}

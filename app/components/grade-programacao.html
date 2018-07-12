@@ -1,0 +1,101 @@
+<section class="grade-programacao" data-require="gradeProgramacao" >
+	<div class="container">
+		<div class="row filtro">
+			
+			<div class="title">
+				<h2 class="main-title">GRADE DE PROGRAMAÇÃO</h2>
+			</div>
+
+			<div class="caixa-padrao f_canal">
+				<form class="form-busca">
+					<legend class="sr-only">O que deseja procurar</legend>
+					<label for="channelName">Filtrar por canal</label>
+					<fieldset class="actions-form">
+						<input placeholder="Digite nome do canal" name="channelName" id="channelName">
+						<button type="submit" class="icon-search fa neticon-lupa"><i>Alterar cidade</i></button>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="caixa-padrao f_ordem">
+				<form class="form-busca">
+					<label for="orderBy">Ordenar por</label>
+					<fieldset class="actions-form">
+						<select name="orderBy" id="orderBy">
+							<option value="cn_canal asc">Nº</option>                           
+	                        <option value="st_canal asc">AZ</option>
+	                        <option value="st_canal desc">ZA</option>   
+						</select>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="caixa-padrao f_tipo">
+				<form class="form-busca">
+					<label for="channelType">Tipo de canal</label>
+					<fieldset class="actions-form">
+						<select id="channelType">
+							<option value="all">Todos</option>
+							<option value="124">Canal NET</option>
+							<option value="16">Canais Abertos Cortesia ²</option>
+							<option value="8">Variedades</option>
+							<option value="3">Esportes</option>
+							<option value="1">Documentários</option>
+							<option value="5">Infantis</option>
+							<option value="4">Filmes</option>
+							<option value="64">Canais Telecine</option>
+							<option value="65">Canais HBO</option>
+							<option value="66">Canais Premiere</option>
+						</select>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="caixa-padrao f_busca">
+				<form class="form-busca">
+					<legend class="sr-only">O que deseja procurar</legend>
+					<label for="genericSearch">Busca</label>
+					<fieldset class="actions-form">
+						<input placeholder="Procure por título, diretor ou gênero" title="Procure por título, diretor ou gênero" name="genericSearch" id="genericSearch">
+						<button type="submit" class="icon-search fa neticon-lupa"><i>Alterar cidade</i></button>
+					</fieldset>
+				</form>
+				<div id="resulBuscaProg">
+					<ul class="result-list">
+					</ul> 
+				</div>
+			</div>			
+		</div>
+
+		<div class="row">
+			<div class="datepicker">
+				<span class="neticon-calendario"></span>
+				<div class="dia" data-toggle="datepicker" id="diaGrade">hoje</div>
+				<span class="neticon-calendario"></span>
+				<div class="calendario"></div>
+			</div>
+
+
+			<div class="canal">
+				<ul class="canal_lista">
+				</ul>
+			</div>
+
+			<div class="scroll">
+				<div class="prog">
+					<ul class="hora">
+						<li>00:00</li><li>00:30</li><li>01:00</li><li>01:30</li><li>02:00</li><li>02:30</li><li>03:00</li><li>03:30</li><li>04:00</li><li>04:30</li><li>05:00</li><li>05:30</li><li>06:00</li><li>06:30</li><li>07:00</li><li>07:30</li><li>08:00</li><li>08:30</li><li>09:00</li><li>09:30</li><li>10:00</li><li>10:30</li><li>11:00</li><li>11:30</li><li>12:00</li><li>12:30</li><li>13:00</li><li>13:30</li><li>14:00</li><li>14:30</li><li>15:00</li><li>15:30</li><li>16:00</li><li>16:30</li><li>17:00</li><li>17:30</li><li>18:00</li><li>18:30</li><li>19:00</li><li>19:30</li><li>20:00</li><li>20:30</li><li>21:00</li><li>21:30</li><li>22:00</li><li>22:30</li><li>23:00</li><li>23:30</li>	
+					</ul>
+					<ul class="prog_lista"></ul>
+				</div>
+			</div>
+
+	   
+
+			<div class="sem-resultado">Nenhum canal encontrado.</div>
+		</div>
+		<div class="mais_prog" id="maisCanais">
+			<div class="btn"> Mostrar mais canais</div>
+		</div>
+	</div>
+</section>

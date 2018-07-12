@@ -1,0 +1,13 @@
+User-agent: *
+
+Disallow: /api/cidades
+Disallow: /api/paises
+Disallow: /static
+Disallow: /cs/Satellite
+Disallow: /cs/Satellite
+Disallow: /500
+Disallow: /404
+Disallow: /401
+Disallow: /sitemap
+
+Sitemap: https://www.claro.com.br/sitemap.xml

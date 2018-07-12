@@ -1,0 +1,25 @@
+@import 'variables';
+
+.g-message{
+  padding: 30px 0;
+}
+.g-message .logo {
+    margin: 0 0 45px;
+}
+.g-message .title {    
+    line-height: 1;
+    font-size: 34px;
+    margin: 0 0 30px;
+    max-width: 440px;
+}
+.g-message .disclaimer { 
+    font-size: 18px;
+    margin: 0;
+    max-width: 440px;
+}
+.g-message .code {
+  display: block;
+  font-size: 18px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}

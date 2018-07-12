@@ -1,0 +1,5 @@
+User-agent: *
+
+Noindex: /
+
+Disallow: /

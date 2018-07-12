@@ -1,0 +1,65 @@
+{
+  "name": "portal-claro",
+  "version": "1.0.0",
+  "description": "Projeto padrão para o desenvolvimento frontend",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test-jenkins": "JUNIT_REPORT_PATH=/tmp/report.xml mocha --colors --reporter mocha-jenkins-reporter"
+  },
+  "dependencies": {
+    "amd-loader": "0.0.8",
+    "bower-nexus3-resolver": "*",    
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.2.1",
+    "mocha": "^3.4.2",
+    "mocha-jenkins-reporter": "0.3.8",
+    "mocha-jsdom": "^1.1.0",
+    "mocha-junit-reporter": "^1.13.0",
+    "moment": "^2.22.1",
+    "request": "^2.83.0",
+    "requirejs": "^2.3.4",
+    "utils": "^0.3.1"
+  },
+  "devDependencies": {
+    "amd-loader": "0.0.8",
+    "amdefine": "^1.0.1",
+    "browser-sync": "^2.18.8",
+    "chai": "^4.1.2",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-tag-include": "^1.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-mocha": "^4.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "jenkins-mocha": "^4.1.2",
+    "run-sequence": "^2.0.0",
+    "should": "^13.1.3",
+    "jsdom": "11.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickscombr/cms.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Sass",
+    "jQuery",
+    "Gulp",
+    "Bower",
+    "BrowserSync"
+  ],
+  "author": "Ricardo Marques",
+  "license": "ISC"
+}

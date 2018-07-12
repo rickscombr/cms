@@ -1,0 +1,135 @@
+.carrosselPadrao {
+	.row{
+		position: relative;
+		overflow: hidden;
+	}
+
+    .owl-carousel {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+
+      /*  > a {
+            display: none;
+
+            &:first-child {
+                display: inline-block;
+            }
+        }*/
+
+        &.owl-loading {
+            width: auto;
+        }
+
+        &.owl-loaded {
+            width: auto;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                border: 0 none;
+                /*display: inline-block;*/
+                float: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                .item {
+                    max-width: none;
+
+                    img {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .owl-dots {
+			padding: 25px 15px 20px 0;
+			width: 100%;
+			text-align: right;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			max-width: 1140px;
+			background: transparent;
+
+			.owl-dot {
+				background: $color1;
+				border-radius: 50%;
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				margin: 0 5px;
+				
+				&.active {
+					background: $color12;
+				}
+			}
+		}
+    }
+    .item {
+		max-width: none;
+		position: relative;
+		.conteudo{
+			width: 40%;
+			position: absolute;
+			z-index: 1;
+			/*background-color: red;*/
+			top: 30%;
+			color: #FFF;
+			text-align: left;
+			left: 8%;
+			h2{
+				font-size: 58px;
+				margin-bottom: 4%;
+			}
+			div{
+				font-size: 25px;
+				font-family: FuturaBT;
+			}
+		}
+		picture, video{
+			position: relative;
+			z-index: 0;
+		}
+	}
+
+
+    .dots-custom {
+        position: absolute;
+        bottom: 0;
+        padding: 0 15px;
+        z-index: 1;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+
+        .owl-dot {
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+[data-componente="carrosselPadrao"]{
+	&.disable{
+		.owl-carousel{
+			.item{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.carrosselPadrao {
+		.owl-dots {
+			padding: 25px 30px 20px 0;
+		}
+	}
+}

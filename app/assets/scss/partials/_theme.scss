@@ -1,0 +1,1461 @@
+@import 'variables';
+.c-header-btn {
+    .c-header-btn-item {
+        &.blue {
+            background-color: $color5;
+            color: $color1;
+        }
+        &.yellow {
+            background-color: $color7;
+            color: $color0;
+        }
+        &.gray {
+            background-color: $color4;
+            color: $color1;
+        }
+    }
+}
+
+.combinacao1{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color6;
+                    border-color: $color6;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color4;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color6;
+                color: $color1;
+            }
+        }
+
+    }
+    .c-bill-offer{
+        color: $color5;
+    }
+
+    .c-bg{
+        background-color: $color1;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color5;
+
+            .bg{
+               background-color: $color5;
+           }
+               .c-title,
+               .c-description,
+               .c-bill-offer{
+                color: $color1;
+            }
+
+            .c-button{
+                background-color: $color1;
+                color: $color5;
+            }
+        }
+    }
+
+
+    .c-bg-o{
+        background-color: rgba(255, 255, 255, 0.90);
+    }
+
+    .c-button{
+        background-color: $color7;
+        color: $color4;
+
+        &:hover{
+            background-color:  $color12;
+            color: $color4;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-link{
+        color: $color5;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color1;
+        color: $color5;
+
+        &::before{
+             border-color: $color5 transparent transparent transparent;
+        }
+
+
+         a{
+            color: $color5;
+        }
+        a:hover,
+        &.active{
+            color: $color1;
+            background-color: $color5;
+
+            a{
+                color: $color1;
+            }
+        }
+
+        &.no-hover{
+            &:hover{
+                background-color: $color1;
+                color: $color5;
+            }
+        }
+
+        &:hover{
+            color: $color1;
+            background-color: $color5;
+             a{
+                color: $color1;
+            }
+        }
+    }
+
+    .c-body{
+        background-color: $color1;
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color1 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color5;
+
+        .c-title,
+        .c-description{
+            color: $color1;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color6;
+                    color: $color1;
+                }
+            }
+        }
+        .c-bg{
+            background-color: $color5;
+        }
+        .c-link{
+            color: $color1;
+        }
+
+        .c-button{
+            background-color: $color1;
+            color: $color5;
+
+            &:hover{
+                background-color:  $color6;
+                color: $color1;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color1;
+        background-color: $color5;
+        &:before{
+            border-color: transparent transparent $color5 transparent;
+        }
+    }
+}
+
+.combinacao2{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color1;
+                    border-color: $color1;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color1;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color6;
+                color: $color1;
+            }
+        }
+    }
+
+    .c-bg{
+        background-color: $color5;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color1;
+
+            .bg{
+                background-color: $color1;
+            }
+
+            .c-title,
+            .c-description,
+            .c-bill-offer{
+                color: $color0;
+            }
+
+            .c-button{
+                background-color: $color5;
+                color: $color1;
+            }
+
+        }
+    }
+
+    .c-bill-offer{
+        color: $color1;
+    }
+
+    .c-bg-o{
+        background-color: rgba(215, 50, 30, 0.90);
+    }
+
+    .c-button{
+        background-color: $color7;
+        color: $color0;
+
+        &:hover{
+            background-color:  $color12;
+            color: $color4;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    .c-link{
+        color: $color1;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color5;
+        color: $color1;
+
+        &::before{
+            border-color: $color6 transparent transparent transparent;
+        }
+
+
+        a{
+            color: $color1;
+        }
+        a:hover,
+        &.active{
+            color: $color1;
+            background-color: $color6;
+        }
+
+        &.no-hover{
+            &:hover{
+                background-color: $color5;
+                color: $color1;
+            }
+        }
+
+        &:hover{
+            color: $color1;
+            background-color: $color6;
+             a{
+                color: $color1;
+            }
+        }
+    }
+
+    .c-body{
+        background-color: $color1;
+    }
+
+    .mosaico{
+        .horizontal{
+            .mosaico-item{
+                background-color: $color1;
+            }
+
+            .c-button{
+                background-color:  $color6;
+                color: $color1;
+
+                &:hover{
+                    background-color: $color1;
+                    color: $color5;
+                }
+            }
+        }
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color5 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color1;
+
+        .c-title,
+        .c-description{
+            color: $color4;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color6;
+                    color: $color1;
+                }
+            }
+
+        }
+
+        .c-bg{
+            background-color: $color1;
+        }
+
+        .c-link{
+            color: $color5;
+        }
+
+        .c-button{
+            background-color: $color5;
+            color: $color1;
+
+            &:hover{
+                background-color:  $color6;
+                color: $color1;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color2;
+
+    }
+    .box-sub-destaques{
+        color:  $color4;
+        background-color: $color1;
+        &:before{
+            border-color: transparent transparent $color1 transparent;
+        }
+    }
+
+}
+
+.combinacao3{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color11;
+                    border-color: $color11;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color0;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color12;
+                color: $color0;
+            }
+        }
+    }
+
+    .c-bg{
+        background-color: $color1;
+    }
+
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color11;
+
+            .bg{
+                background-color: $color11;
+            }
+            .c-title,
+            .c-description,
+            .c-bill-offer{
+                color: $color0;
+            }
+
+            .c-button{
+                background-color: $color1;
+                color: $color0;
+            }
+
+        }
+    }
+
+    .c-bill-offer{
+        color: $color11;
+    }
+
+    .c-bg-o{
+        background-color: rgba(255, 255, 255, 0.90);
+    }
+
+    .c-link{
+        color: $color11;
+    }
+
+    .c-button{
+        background-color: $color5;
+        color: $color1;
+
+        &:hover{
+            background-color:  $color6;
+            color: $color1;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color1;
+        color: $color0;
+
+        &.no-hover{
+            &:hover{
+                background-color: $color1;
+                color: $color0;
+            }
+        }
+
+        &::before{
+            border-color: $color12 transparent transparent transparent;
+        }
+
+        a{
+            color: $color0;
+        }
+
+        a:hover,
+        &.active{
+            color: $color0;
+            background-color: $color12;
+
+            a {
+                color: $color0;
+            }
+        }
+
+        &:hover{
+            color: $color0;
+            background-color: $color12;
+             a{
+                color: $color0;
+            }
+        }
+    }
+
+    .c-body{
+        background: $color1;
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color1 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color12;
+
+        .c-title,
+        .c-description{
+            color: $color0;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color11;
+                    color: $color0;
+                }
+            }
+        }
+
+        .c-bg{
+            background-color: $color12;
+        }
+
+        .c-link{
+            color: $color1;
+        }
+
+        .c-button{
+            background-color: $color1;
+            color: $color0;
+
+            &:hover{
+                background-color:  $color11;
+                color: $color0;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color4;
+        background-color: $color7;
+        &:before{
+            border-color: transparent transparent $color7 transparent;
+        }
+    }
+}
+
+.combinacao4{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color1;
+                    border-color: $color1;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color0;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color11;
+                color: $color0;
+            }
+        }
+    }
+
+    .c-bill-offer{
+        color: $color1;
+    }
+
+    .c-bg{
+        background-color: $color7;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color1;
+
+            .bg{
+                background-color: $color1;
+            }
+            .c-title,
+            .c-description,
+            .c-bill-offer{
+                color: $color0;
+            }
+
+            .c-button{
+                background-color: $color12;
+                color: $color0;
+            }
+
+        }
+    }
+
+    .c-bg-o{
+        background-color: rgba(253, 175, 23, 0.90);
+    }
+
+    .c-button{
+        background-color: $color5;
+        color: $color1;
+
+        &:hover{
+            background-color:  $color6;
+            color: $color1;
+        }
+    }
+
+    .c-h-button{
+      font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-link{
+        color: $color1;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color11;
+        color: $color0;
+
+        &.no-hover{
+            &:hover{
+                background-color: $color11;
+                color: $color0;
+            }
+        }
+
+        &::before{
+            border-color: $color12 transparent transparent transparent;
+        }
+
+        a{
+            color: $color0;
+        }
+
+        a:hover,
+        &.active{
+            color: $color0;
+            background-color: $color12;
+        }
+
+        &:hover{
+            color: $color0;
+            background-color: $color12;
+            a{
+                color: $color0;
+            }
+        }
+    }
+
+    .c-body{
+        background: $color1;
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color12 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color1;
+
+        .c-title,
+        .c-description{
+            color: $color0;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color12;
+                    color: $color0;
+                }
+            }
+        }
+
+        .c-bg{
+            background-color: $color1;
+        }
+
+        .c-link{
+            color: $color11;
+        }
+
+        .c-button{
+            background-color: $color11;
+            color: $color0;
+
+            &:hover{
+                background-color:  $color12;
+                color: $color0;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color4;
+        background-color: $color1;
+        &:before{
+            border-color: transparent transparent $color1 transparent;
+        }
+    }
+}
+
+.combinacao5{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color13;
+                    border-color: $color13;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color0;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color14;
+                color: $color1;
+            }
+        }
+    }
+
+    .c-bg{
+        background-color: $color1;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color13;
+
+            .bg{
+                background-color: $color13;
+            }
+            .c-title,
+            .c-description,
+            .c-bill-offer{
+                color: $color0;
+            }
+
+            .c-button{
+                background-color: $color1;
+                color: $color13;
+            }
+
+        }
+    }
+
+    .c-bg-o{
+        background-color: rgba(255, 255, 255, 0.90);
+    }
+
+    .c-link{
+        color: $color13;
+    }
+
+    .c-bill-offer{
+        color: $color13;
+    }
+
+    .c-button{
+        background-color: $color7;
+        color: $color3;
+
+        &:hover{
+            background-color:  $color12;
+            color: $color3;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color1;
+        color: $color0;
+
+        &.no-hover{
+            &:hover{
+                background-color: $color1;
+                color: $color0;
+            }
+        }
+
+        &::before{
+            border-color: $color14 transparent transparent transparent;
+        }
+
+
+        a{
+            color: $color0;
+        }
+
+        a:hover,
+        &.active{
+            color: $color1;
+            background-color: $color14;
+
+            a{
+                color: $color1;
+            }
+        }
+
+        &:hover{
+            color: $color1;
+            background-color: $color14;
+            a{
+                color: $color1;
+            }
+        }
+    }
+
+
+    .c-body{
+        background: $color1;
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color1 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color13;
+
+        .c-title,
+        .c-description{
+            color: $color1;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color14;
+                    color: $color1;
+                }
+            }
+        }
+        .c-bg{
+            background-color: $color13;
+        }
+
+        .c-link{
+            color: $color1;
+        }
+
+        .c-button{
+            background-color: $color1;
+            color: $color14;
+
+            &:hover{
+                background-color:  $color14;
+                color: $color1;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color1;
+        background-color: $color6;
+        &:before{
+            border-color: transparent transparent $color6 transparent;
+        }
+    }
+}
+
+.combinacao6{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color1;
+                    border-color: $color1;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color17;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color14;
+                color: $color1;
+            }
+        }
+    }
+    .c-bg{
+        background-color: $color6;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color1;
+
+            .bg{
+               background-color: $color1;
+           }
+
+           .c-title,
+           .c-description,
+           .c-bill-offer{
+                color: $color0;
+            }
+
+            .c-button{
+                background-color: $color14;
+                color: $color1;
+            }
+        }
+    }
+    .c-bg-o{
+        background-color: rgba(246, 132, 43, 0.90);
+    }
+    .c-link{
+        color: $color1;
+    }
+    .c-bill-offer{
+        color: $color1;
+    }
+    .c-button{
+        background-color: $color7;
+        color: $color3;
+
+        &:hover{
+            background-color:  $color12;
+            color: $color3;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color13;
+        color: $color1;
+
+        &.no-hover{
+            &:hover{
+                background-color: $color13;
+                color: $color1;
+            }
+        }
+
+        &::before{
+            border-color: $color14 transparent transparent transparent;
+        }
+
+        a{
+            color: $color1;
+        }
+
+        a:hover,
+        &.active{
+            color: $color1;
+            background-color: $color14;
+        }
+
+        &:hover{
+            color: $color1;
+            background-color: $color14;
+            a{
+                color: $color1;
+            }
+        }
+    }
+
+
+    .c-body{
+        background: $color1;
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color13 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color1;
+
+        .c-title,
+        .c-description{
+            color: $color0;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color14;
+                    color: $color1;
+                }
+            }
+        }
+
+        .c-bg{
+            background-color: $color1;
+        }
+
+        .c-link{
+            color: $color13;
+        }
+
+        .c-button{
+            background-color: $color13;
+            color: $color1;
+
+            &:hover{
+                background-color:  $color14;
+                color: $color1;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color4;
+        background-color: $color1;
+        &:before{
+            border-color: transparent transparent $color1 transparent;
+        }
+    }
+}
+
+.combinacao7{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color15;
+                    border-color: $color15;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color0;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color16;
+                color: $color1;
+            }
+        }
+    }
+
+    .c-bg{
+        background-color: $color21;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color15;
+
+            .bg{
+               background-color: $color15;
+           }
+           .c-title,
+           .c-description,
+           .c-bill-offer{
+                color: $color4;
+            }
+
+            .c-button{
+                background-color: $color16;
+                color: $color1;
+            }
+        }
+    }
+
+    .c-bg-o{
+        background-color: rgba(255, 255, 255, 0.90);
+    }
+
+    .c-link{
+        color: $color15;
+    }
+
+    .c-bill-offer{
+        color: $color15;
+    }
+
+    .c-button{
+        background-color: $color7;
+        color: $color3;
+
+        &:hover{
+            background-color:  $color12;
+            color: $color3;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color1;
+        color: $color15;
+
+        &.no-hover{
+            &:hover{
+                background-color: $color1;
+                color: $color15;
+            }
+        }
+
+        &::before{
+            border-color: $color15 transparent transparent transparent;
+        }
+
+
+        a{
+            color: $color0;
+        }
+
+        a:hover,
+        &.active{
+            color: $color1;
+            background-color: $color15;
+
+            a{
+                color: $color1;
+            }
+        }
+
+        &:hover{
+            color: $color1;
+            background-color: $color15;
+            a{
+                color: $color1;
+            }
+        }
+    }
+
+    .c-body{
+        background: $color1;
+    }
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color1 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color15;
+
+        .c-title,
+        .c-description{
+            color: $color1;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color16;
+                    color: $color1;
+                }
+            }
+
+        }
+        .c-bg{
+            background-color: $color15;
+        }
+
+        .c-link{
+            color: $color1;
+        }
+
+        .c-button{
+            background-color: $color1;
+            color: $color0;
+
+            &:hover{
+                background-color:  $color16;
+                color: $color1;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color4;
+        background-color: $color23;
+        &:before{
+            border-color: transparent transparent $color23 transparent;
+        }
+    }
+
+}
+
+.combinacao8{
+    .carrosselVideo{
+        .owl-carousel{
+            .owl-prev,
+            .owl-next{
+                .fa {
+                    color: $color1;
+                    border-color: $color1;
+                }
+            }
+        }
+    }
+
+    .c-title,
+    .c-description{
+        color: $color1;
+
+        &:hover{
+            &.c-hover{
+                background-color:  $color16;
+                color: $color1;
+            }
+        }
+
+    }
+    .c-bg-o{
+        background-color: rgba(117, 115, 116, 0.90);
+    }
+
+    .c-bg{
+        background-color: $color20;
+    }
+
+    .c-bg-hover{
+        &:hover{
+            background-color: $color1;
+
+            .bg{
+               background-color: $color1;
+            }
+           .c-title,
+           .c-description,
+           .c-bill-offer{
+                color: $color0;
+            }
+
+            .c-button{
+                background-color: $color1;
+                color: $color0;
+            }
+        }
+    }
+
+    .c-link{
+        color: $color1;
+    }
+
+    .c-bill-offer{
+        color: $color1;
+    }
+
+    .c-button{
+        background-color: $color7;
+        color: $color4;
+
+        &:hover{
+            background-color:  $color12;
+            color: $color3;
+        }
+    }
+
+    .c-h-button{
+       font-weight: bold;
+        border-radius: 20px;
+        text-transform: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .c-image{
+        background-color: $color1;
+    }
+
+    .c-tab{
+        background-color: $color15;
+        color: $color1;
+
+        &::before{
+            border-color: $color16 transparent transparent transparent;
+        }
+
+
+         a{
+            color: $color1;
+        }
+
+        a:hover,
+        &.active{
+            color: $color1;
+            background-color: $color16;
+        }
+
+        &:hover{
+            color: $color1;
+            background-color: $color16;
+            a{
+                color: $color1;
+            }
+        }
+    }
+
+    .c-body{
+        background: $color1;
+    }
+
+    .list-of-tv-highlights{
+        .item{
+            .text{
+                &:after{
+                    box-shadow: inset $color15 0 -15px 25px;
+                }
+            }
+        }
+    }
+
+    .highlight{
+        background-color: $color1;
+
+        .c-title,
+        .c-description{
+            color: $color0;
+
+            &:hover{
+                &.c-hover{
+                    background-color:  $color16;
+                    color: $color1;
+                }
+            }
+
+        }
+        .c-bg{
+            background-color: $color1;
+        }
+
+        .c-link{
+            color: $color15;
+        }
+
+        .c-button{
+            background-color: $color15;
+            color: $color1;
+
+            &:hover{
+                background-color:  $color16;
+                color: $color1;
+            }
+        }
+    }
+    .box-desc{
+        background-color: $color17;
+    }
+    .box-sub-destaques{
+        color:  $color4;
+        background-color: $color1;
+        &:before{
+            border-color: transparent transparent $color1 transparent;
+        }
+    }
+}

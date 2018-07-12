@@ -1,0 +1,51 @@
+<style>
+    @media only screen and (min-width: 1025px) {
+        .modal-porteira{
+            background-image: url(assets/images/geral/laborg_NET_multitelei_05_1280px-1024x572.jpg);
+        }
+    }
+    @media only screen and (min-width: 701px) and  (max-width: 1024px) {
+        .modal-porteira{
+            background-image: url(assets/images/BG1920x830-1374092248296.jpg);
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        .modal-porteira{
+            background-image: url(assets/images/lorempixel2.jpg);
+        }
+    }
+</style>
+
+<div id="preHome" class="modal modal-porteira" style="background-color:#ddd6c9;display:none;">
+
+    <div class="modal-dialog">
+        <div class="top-prehome">
+            <img src="assets/images/logo-net.png" alt="Net">
+
+            <h2>Seja bem-vindo!</h2>
+        </div>
+
+        <section class="porteira form-prehome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="target-list">
+                            <form id="formPreHome" class="forms requestJson">
+                                <fieldset>
+                                    <legend class="sr-only">Escolha sua cidade.</legend>
+                                    <label class="label">Onde você esta?</label>
+                                    <input id="getValueAutocomplete" class="inputAutocomplete" placeholder="Ex: São Paulo/SP" role="search" type="text" data-select-prefixo="11" />
+                                </fieldset>
+
+                                <button type="submit" class="btn cor1 btn-submit" data-home-type="cliente" data-expiration="365">Já sou Cliente</button>
+                                <button type="submit" class="btn cor1 btn-submit" data-home-type="nao-cliente" data-expiration="365">Não Sou Cliente</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+

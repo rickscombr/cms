@@ -1,0 +1,53 @@
+@import 'variables';
+
+.breadcrumb {
+    color: $color6;
+    font-size: 1em;
+    margin-bottom: 0px;
+    padding: 18px 0px;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-global + .container .col-sm-12 {
+        float: left;
+    }
+}
+
+.breadcrumb a {
+    color: rgb(51, 122, 183);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li,
+.breadcrumb ul {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.breadcrumb li,
+.breadcrumb ul {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.breadcrumb li a:first-child {
+    margin-left: 0px;
+}
+
+.breadcrumb li a {
+    margin: 0px 5px;
+    color: $color5;
+}
+
+.breadcrumb strong {   
+    font-weight: 700; 
+}
